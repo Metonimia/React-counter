@@ -18,12 +18,14 @@ var Counter = React.createClass({
 		});
 	},
 
-	shouldComponentUpdate: function() {
-		console.log('To metoda, która sprawdza, czy komponent powinien zostać zaktualizowany');
-	},
-
 	componentWillMount: function() {
 		console.log('To jest metoda componentWillMount, używana zaraz przed render');
+	},
+
+	shouldComponentUpdate: function() {
+		if (true) {
+    	return console.log('To metoda, która sprawdza, czy komponent powinien zostać zaktualizowany');
+		};
 	},
 
 	render: function() {
